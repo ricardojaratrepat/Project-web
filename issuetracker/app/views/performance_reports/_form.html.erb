@@ -1,0 +1,42 @@
+<%= form_with(model: performance_report) do |form| %>
+  <% if performance_report.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(performance_report.errors.count, "error") %> prohibited this performance_report from being saved:</h2>
+
+      <ul>
+        <% performance_report.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :executive_user_id, style: "display: block" %>
+    <%= form.text_field :executive_user_id %>
+  </div>
+
+  <div>
+    <%= form.label :created_tickets, style: "display: block" %>
+    <%= form.number_field :created_tickets %>
+  </div>
+
+  <div>
+    <%= form.label :closed_tickets, style: "display: block" %>
+    <%= form.number_field :closed_tickets %>
+  </div>
+
+  <div>
+    <%= form.label :open_tickets, style: "display: block" %>
+    <%= form.number_field :open_tickets %>
+  </div>
+
+  <div>
+    <%= form.label :average_evaluation, style: "display: block" %>
+    <%= form.text_field :average_evaluation %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

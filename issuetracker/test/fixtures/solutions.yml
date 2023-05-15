@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ticket: one
+  date: 2023-05-14
+  feedback: MyText
+  selected: false
+  evaluation: 1
+
+two:
+  ticket: two
+  date: 2023-05-14
+  feedback: MyText
+  selected: false
+  evaluation: 1

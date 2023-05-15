@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  requesting_user: one
+  title: MyString
+  description: MyText
+  priority: MyString
+  state: MyString
+  incident_date: 2023-05-14 20:31:35
+  deadline: 2023-05-14
+  category: MyString
+  executive_user: one
+
+two:
+  requesting_user: two
+  title: MyString
+  description: MyText
+  priority: MyString
+  state: MyString
+  incident_date: 2023-05-14 20:31:35
+  deadline: 2023-05-14
+  category: MyString
+  executive_user: two
