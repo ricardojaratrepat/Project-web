@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :executive_users
+  resources :requesting_users
   resources :supervisor_users
   resources :support_staffs
   resources :admin_users
